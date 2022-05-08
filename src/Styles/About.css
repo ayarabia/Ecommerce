@@ -92,3 +92,8 @@ width: 100%;
     -ms-border-radius: 20px !important;
     -o-border-radius: 20px !important;
 } 
+.aboutdescription .btn-primary:hover{
+    background-color: #fff !important;
+
+    color: #82AE46;
+}

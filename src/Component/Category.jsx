@@ -12,7 +12,7 @@ function Category() {
         <div className="text">
           <p>Vegetables</p>
           <p>Protect the health of every home</p>
-          <Button>shop now</Button>
+          <Button>Shop now</Button>
         </div>
         <div className="box">
           <img src={require("../Image/category-4.jpg")} />

@@ -58,4 +58,10 @@ margin-bottom: 60px;
     padding: 8px 15px;
     margin-top: 20px ;
     width: fit-content;
+  text-decoration: none;
 } 
+.order .orderdescription a:hover{
+    background-color: #fff !important;
+color: #82AE46 !important;
+
+}

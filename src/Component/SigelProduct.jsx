@@ -7,11 +7,12 @@ import { faStar } from "@fortawesome/free-regular-svg-icons";
 import "../Styles/SingelProduct.css";
 import { connect } from "react-redux";
 import { useState } from "react";
-function SingelProduct() {
+function SingelProduct(props) {
+  let {increse}=props
   const location = useLocation();
   const { data } = location.state;
   let [quntinty, setquntity] = useState(0);
-  let increse = () => {
+  let incresequntity = () => {
     setquntity(quntinty + 1);
   };
   let decrese = () => {
@@ -62,28 +63,28 @@ function SingelProduct() {
               <option value="audi">EXTRA LARGE</option>
             </select>
             <div className="counter">
-              <button onClick={increse}>+</button>
+              <button onClick={incresequntity}>+</button>
               <span>{quntinty}</span>
               <button onClick={decrese}>-</button>
             </div>
-            <Button>Add to Cart</Button>
+            <Button onClick={()=>{increse()}} >Add to Cart</Button>
           </Col>
         </Row>
       </Container>
     </>
   );
 }
-// let mapStateToPropes = (state) => {
-//   console.log(state);
-//   return {
-//     counter: state.counter,
-//   };
-// };
-// let mapDispatchToProps = (dispatch) => {
-//   return {
-//     increse: () => dispatch({ type: "INCRESE" }),
-//     decrese: () => dispatch({ type: "DECRESE" }),
-//   };
-// };
-// export default connect(mapStateToPropes, mapDispatchToProps)(SingelProduct);
-export default SingelProduct;
+let mapStateToPropes = (state) => {
+  console.log(state);
+  return {
+    counter: state.counter,
+  };
+};
+let mapDispatchToProps = (dispatch) => {
+  return {
+    increse: () => dispatch({ type: "INCRESE" }),
+  
+  };
+};
+export default connect(mapStateToPropes, mapDispatchToProps)(SingelProduct);
+

@@ -31,7 +31,7 @@ function About() {
               drunk with Longe and Parole and dragged her into their agency,
               where they abused her for their.
             </p>
-            <Button>shop now</Button>
+            <Button>Shop now</Button>
           </Col>
         </Row>
       </Container>

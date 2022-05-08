@@ -26,7 +26,7 @@ function BlogCard() {
             Vokalia and Consonantia, there live the blind texts.
           </p>
 
-          <a>Read more</a>
+          <a href="#">Read more</a>
         </div>
       </div>
       <div className="order">
@@ -48,7 +48,7 @@ function BlogCard() {
             Vokalia and Consonantia, there live the blind texts.
           </p>
 
-          <a>Read more</a>
+          <a href="#">Read more</a>
         </div>
       </div>
       <div className="order">
@@ -92,7 +92,7 @@ function BlogCard() {
             Vokalia and Consonantia, there live the blind texts.
           </p>
 
-          <a>Read more</a>
+          <a href="#">Read more</a>
         </div>
       </div>
       <div className="order">
@@ -114,7 +114,7 @@ function BlogCard() {
             Vokalia and Consonantia, there live the blind texts.
           </p>
 
-          <a>Read more</a>
+          <a href="#">Read more</a>
         </div>
       </div>
       <div className="order">
@@ -136,7 +136,7 @@ function BlogCard() {
             Vokalia and Consonantia, there live the blind texts.
           </p>
 
-          <a>Read more</a>
+          <a href="#">Read more</a>
         </div>
       </div>
     </div>
