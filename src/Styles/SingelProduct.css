@@ -1,0 +1,66 @@
+.rating{
+    display: flex;
+ flex-wrap: wrap;
+}
+img{
+    width: 100%;
+}
+.rating p{
+    font-size: 20px;
+}
+.rating p:first-child{
+    margin-right: 30px;
+    color: #82ae46;
+}
+.rating p:first-child span{
+    font-size: 16px;
+}
+.rating p:nth-child(2) span{
+color: gray;
+font-size: 18;
+}
+.productdescription{
+    color: gray;
+    padding-right: 100px;  
+    line-height: 1.9;
+    font-size: 18px;
+}
+#size{
+    background-color: #fff !important;
+    color: gray !important;
+   
+    padding: 7px 12px;
+    border: 1px solid rgba(0,0,0,.1)!important
+ }
+ .counter button{
+width: 35px;
+height: 35px;
+border: 1px solid rgba(0,0,0,.1)!important;
+background-color: #fff;
+
+ }
+ .counter{
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+ }
+ .counter span{
+
+    border: 1px solid rgba(0,0,0,.1)!important;
+    padding: 5px 57px;
+    margin: 0 10px;
+ }
+ .btn-primary {
+ background-color: black !important;
+ border-color: black !important;
+
+}
+.btn{
+    border-radius: 24px !important;
+    -webkit-border-radius: 24px !important;
+    -moz-border-radius: 24px !important;
+    -ms-border-radius: 24px !important;
+    -o-border-radius: 24px !important;
+    padding: 12px 40px !important;
+    font-size: 18px !important;
+}

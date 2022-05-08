@@ -1,0 +1,32 @@
+.subcribe{
+    background-color: #F7F6F2;
+  
+}
+.subcribe .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(430px,1fr));
+  
+   grid: 20px;
+ 
+    padding: 80px 50px 80px;
+}
+@media(max-width:767px){
+    .subcribe {
+        padding-left:  10px ;
+    }
+}
+.subcribe .container .info p{
+    color:#797777;
+}
+.subcribe .container .userInput input{
+    border: none;
+    background-color: #fff;
+    padding: 13px 10px;
+    width: 70%;
+}
+.subcribe .container .userInput button{
+    background-color: #82AE46;
+    color: #fff;
+    padding: 13px 10px;
+    border: none;
+}

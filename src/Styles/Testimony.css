@@ -1,0 +1,87 @@
+.testimony .container{
+text-align: center;
+padding: 90px;
+}
+.testimony .container span{
+    color: #9FC070;
+    font-size: 19px;
+    font-weight: 500;
+}
+.testimony .container  h1{
+    font-size: 40px;
+    margin-top: 18px;
+
+    margin-bottom: 18px;
+}
+.testimony .container .titel{
+    color: #979797;
+    margin-bottom: 30px;
+}
+.mycard{
+    text-align: center;
+   
+}
+ .cardimage img{
+  width: 100%;
+    
+}
+ .cardimage{
+     overflow: hidden;
+    
+   width: 90px;
+   height: 90px;
+   border-radius: 50% !important;
+   -webkit-border-radius: 50% !important;
+   -moz-border-radius: 50% !important;
+   -ms-border-radius: 50% !important;
+   -o-border-radius: 50% !important;
+ 
+ 
+}
+.person{
+    margin:30px auto;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+}
+.person .quoteIcon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 59px;
+    bottom: -9px;
+    z-index: 100;
+    color:#9FC070;
+    background-color:#fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.description{
+    border-left: 1px solid #E6E6E6;
+    padding: 20px;
+    position: relative;
+    color:#797777;
+}
+.description span{
+position:absolute ;
+left: -1px;
+width: 2px;
+height: 30%;
+background-color: #9FC070;
+bottom: 47px;
+}
+.lastitem{
+    color:#797777;
+}

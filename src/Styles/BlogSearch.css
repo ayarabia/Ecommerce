@@ -1,0 +1,53 @@
+.list-group-item{
+    
+    background-color: #F7F6F2 !important;
+  border: none !important;
+    border-bottom: 1px dotted rgba(0,0,0,.125) !important
+}
+.list-group{
+    width: 100% !important;
+    margin-bottom: 40px !important;
+}
+.list-group span{
+color: #ccc;
+}
+.RecentBlog{
+    display: flex;
+   
+margin-bottom: 60px;
+margin-top: 20px;
+    
+}
+
+.RecentBlog .RecentBlogImage img{
+    height: 80px;
+   width: 80px;
+   object-fit: cover;
+}
+
+.RecentBlog .RecentBlogdescription{
+    padding:0 22px;
+  
+}
+@media(max-width:767px){
+    .RecentBlog{
+        flex-direction: column;
+    }
+    .RecentBlog .RecentBlogImage img{
+        width: 100%;
+        
+        height: 200px;
+      
+         margin-bottom: 20px;
+      
+      
+    }
+   
+}
+.RecentBlog .RecentBlogdescription span {
+    
+    font-size: 14px;
+}
+.RecentBlog .RecentBlogdescription .message{
+    color: gray;
+}

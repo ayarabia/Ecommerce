@@ -1,0 +1,25 @@
+.componentImage{
+    background-image:url('../Image/1.webp');
+    /* height:350px; */
+    padding: 170px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+       background-position: center center;
+       
+      
+}
+.aboutImage.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000;
+    opacity: .1
+}
+.componentImage .container h1{
+    text-align: center;
+    color: #fff;
+
+}

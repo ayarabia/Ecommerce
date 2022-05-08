@@ -1,0 +1,86 @@
+.checkout .container{
+padding-top: 80px;
+}
+.checkout .container .name{
+    display: flex;
+margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+
+.checkout .container .name  input{
+    width: 100%;
+    margin: 9px 0;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #ddd !important;
+ 
+}
+.checkout .container .name  input:focus,.checkout .container .country select:focus{
+   border-color: #82ae46 !important;
+  
+  
+}
+.checkout .container .country select{
+    outline: none;
+    border: 1px solid #ddd !important;
+width: 100%;
+margin-top: 9px ;
+padding: 15px;
+margin: 20px 0;
+}
+/* @media(max-width:767px){
+    .checkout .container .name input, .checkout .container select{
+        width: 100%;
+    }
+} */
+.checkout .container .cartTotal ,.paymentMethod{
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+}
+.checkout .container .cartTotal h4{
+    margin-bottom: 20px;
+}
+.checkout .container .cartTotal  p{
+    color: gray;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.checkout .container .cartTotal  p:last-child span:last-child{
+    color: black;
+    font-weight: bold;
+    
+}
+.checkout .container .form-check{
+    color: gray;
+    margin-bottom: 20px;
+}
+.btn-primary {
+    display: block !important;
+    width: 100% !important;
+}
+.checkout .container .paymentMethod a{
+    background: #82ae46 !important;
+    border: 1px solid #82ae46 !important;
+    color: #fff !important
+}
+.checkout .container .paymentMethod a:hover{
+    background: #fff !important;
+    border: 1px solid #82ae46 !important;
+    color: #82ae46 !important
+}
+@media(max-width:767px){
+    .checkout .container .cartTotal ,.paymentMethod{
+      
+        margin-right: 0px;
+     
+    }
+}

@@ -1,0 +1,90 @@
+
+.contactImage{
+    background-image:url('../Image/1.webp');
+    /* height:350px; */
+    padding: 140px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+       background-position: center center;
+       
+   
+       
+}
+.contact .container h1{
+    text-align: center;
+    color: #fff;
+
+}
+.contact .ourInfo{
+    background-color: #F7F6F2;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+.contact .ourInfo .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,minmax(250px,1fr));
+    gap: 20px;
+}
+.contact .ourInfo .container .contactbox{
+    background-color: #fff !important;
+    height: 120px;
+    padding: 20px;
+}
+.contact .ourInfo .container .contactbox span{
+    color: gray;
+    font-size: 16px !important;
+}
+.contact .ourInfo .container .contactbox a{
+    color: #1a1a1a !important;
+    text-decoration: none !important;
+}
+.contact .ourInfo .container  .contactbox:first-child p{
+    color: #1a1a1a !important;
+    font-size: 14px;
+   
+
+}
+.contact .location  {
+    background-color: #F7F6F2;
+    padding: 50px;
+ 
+  
+}
+
+/* .googelMap {
+width: 900px !important;
+margin: auto;
+} */
+@media(max-width:890px){
+    .contact .location .container .row .col:first-child{
+display: none !important;
+    }  
+  
+        
+}
+
+.contact .location .container form .form-control{
+padding: 16px !important;
+}
+.contact .location .container form{
+    background-color: #fff !important;
+    padding: 45px;
+}
+.contact .location .container form .btn.btn-primary{
+        background: #82ae46 !important;
+        border: 1px solid #82ae46 !important;
+        font-size: 19px;
+        color: #fff;
+        padding: 16px 50px;
+        border-radius:30px !important ;
+        -webkit-border-radius:30px !important ;
+        -moz-border-radius:30px !important ;
+        -ms-border-radius:30px !important ;
+        -o-border-radius:30px !important ;
+}
+/* .contact .location .container div{
+overflow: hidden;
+color: aqua;
+} */
+

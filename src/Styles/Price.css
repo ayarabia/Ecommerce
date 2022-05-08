@@ -1,0 +1,54 @@
+.price{
+    background-image: url('../Image/price.webp');
+   
+    background-repeat: no-repeat;
+background-size: cover;
+ 
+   background-position: center center;
+  
+}
+.price .container{
+    display: flex;
+    justify-content: end;
+}
+.price .bestprice{
+ padding: 90px 10px;
+ flex-basis: 50%;
+
+}
+@media (max-width:767px){
+    .price .bestprice{
+        text-align: center;
+      
+    }  
+    .price .bestprice p{
+        color: #6e6969;
+    }
+}
+.price .bestprice .first{
+    color: #82AE46;
+    font-size: 18px;
+}
+
+.price .bestprice p:nth-of-type(2){
+    color: #868484;
+    margin-top: 20px;
+}
+.price .bestprice h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+.price .bestprice p:nth-of-type(3){
+    color: #82AE46;
+    font-size: 28px;
+    font-weight: 400;
+}
+.price .bestprice p:nth-of-type(4){
+    color: #82AE46;
+    font-size: 20px;
+    font-weight: 400;
+}
+.price .bestprice p:nth-of-type(4) span{
+    font-size: 20px;
+    color: #868484; 
+}
