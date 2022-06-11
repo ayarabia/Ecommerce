@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ayarabia.github.io/Ecommerce",
   "name": "ecommerce",
   "version": "0.1.0",
   "private": true,
@@ -12,7 +13,10 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.26.1",
     "bootstrap": "^5.1.3",
+    "cors": "^2.8.5",
+    "gh-pages": "^4.0.0",
     "google-maps-react": "^2.0.6",
+    "http-proxy-middleware": "^2.0.6",
     "react": "^18.0.0",
     "react-bootstrap": "^2.2.3",
     "react-dom": "^18.0.0",
@@ -27,7 +31,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+     "deploy": "gh-pages -d build"
+    
   },
   "eslintConfig": {
     "extends": [

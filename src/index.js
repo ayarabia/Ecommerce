@@ -12,6 +12,7 @@ import { createStore ,applyMiddleware} from "redux";
 import  rootReducer from "./Redux/Reducer/index";
 
 const mystor=applyMiddleware(promiseMW)(createStore)
+
 ReactDOM.render(
   <Provider store={mystor(rootReducer)}>
   <BrowserRouter>

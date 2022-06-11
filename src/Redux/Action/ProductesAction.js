@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export default function getProduct(){
-let products=axios.get("https://jsonkeeper.com/b/KBDB").then((response)=>{
+let products=axios.get("https://ayarabia.github.io/jsonData/formatted.json").then((response)=>{
     // console.log(response.data);
     return response.data
 

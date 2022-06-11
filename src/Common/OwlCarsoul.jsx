@@ -9,7 +9,7 @@ const options = {
   // nav: true,
   autoplay: false,
 
-  //   smartSpeed: 1000,
+ smartSpeed: 1000,
   responsive: {
     0: {
       items: 1,
