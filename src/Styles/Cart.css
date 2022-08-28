@@ -7,14 +7,9 @@ table{
 thead tr{
     background-color: #82AE46 !important;
 color: #fff !important;
-
-
-
-
 }
 thead tr th ,tbody tr td{
-   
-    padding: 20px !important;
+  padding: 20px !important;
    
 }
 tbody tr td {
@@ -27,4 +22,9 @@ table tbody tr td img{
     width: 100px;
     height: 100px;
 }
-
+.emptyCart {
+    height: 250px;
+}
+.emptyCart a{
+   color: #82AE46 !important;
+}

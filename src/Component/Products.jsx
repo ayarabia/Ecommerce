@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Container } from "react-bootstrap";
+import { Container,Row,Col } from "react-bootstrap";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import getProduct from "../Redux/Action/ProductesAction";
@@ -28,11 +28,12 @@ function Products(props) {
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia
         </p>
-        <div className="parantdiv">
+        <Row className="parantdiv">
           {productes.slice(0, 8) &&
             productes.slice(0, 8).map((item, index) => {
               return (
-                <div className="box" key={index} onClick={(item) => {}}>
+                <Col sm={12} md={6} lg={3} key={index} onClick={(item) => {}}>
+                  <div className="box">
                   <img src={item.image} alt="" />
                   <p>{item.title}</p>
                   <span>${item.price}</span>
@@ -43,6 +44,7 @@ function Products(props) {
                       </div>
                     </Link>
                     <div
+                      role="button"
                       onClick={() => {
                         increse();
                         item.added = true;
@@ -52,6 +54,7 @@ function Products(props) {
                       <FontAwesomeIcon icon={faCartArrowDown} />
                     </div>
                     <div
+                      role="button"
                       onClick={() => {
                         increse();
                         item.loved = true;
@@ -61,10 +64,11 @@ function Products(props) {
                       <FontAwesomeIcon icon={faHeart} />
                     </div>
                   </div>
-                </div>
+                  </div>
+                </Col>
               );
             })}
-        </div>
+        </Row>
       </Container>
     </div>
   );
@@ -83,132 +87,3 @@ let mapDispatchToProps = (dispatch) => {
   };
 };
 export default connect(mapStateToPropes, mapDispatchToProps)(Products);
-
-// <div className="box">
-// <img src={require("../Image/feat1.jpg")} alt="" />
-// <p>BELL PEPPER</p>
-// <span>$80.00</span>
-// <div className="icons">
-//   <div>
-//     <FontAwesomeIcon icon={faBars} />{" "}
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faCartArrowDown} />
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faHeart} />{" "}
-//   </div>
-// </div>
-// </div>
-// <div className="box">
-// <img src={require("../Image/feat2.jpg")} alt="" />
-// <p>STRAWBERRY</p>
-// <span>$120.00</span>
-// <div className="icons">
-//   <div>
-//     <FontAwesomeIcon icon={faBars} />{" "}
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faCartArrowDown} />
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faHeart} />{" "}
-//   </div>
-// </div>
-// </div>
-// <div className="box">
-// <img src={require("../Image/feat3.jpg")} alt="" />
-// <p>GREEN BEANS</p>
-// <span>$120.00</span>
-// <div className="icons">
-//   <div>
-//     <FontAwesomeIcon icon={faBars} />{" "}
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faCartArrowDown} />
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faHeart} />{" "}
-//   </div>
-// </div>
-// </div>
-// <div className="box">
-// <img src={require("../Image/feat4.jpg")} alt="" />
-// <p>PURPLE CABBAGE</p>
-// <span>$80.00</span>
-// <div className="icons">
-//   <div>
-//     <FontAwesomeIcon icon={faBars} />{" "}
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faCartArrowDown} />
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faHeart} />{" "}
-//   </div>
-// </div>
-// </div>
-// <div className="box">
-// <img src={require("../Image/feat5.jpg")} alt="" />
-// <p>TOMATOE</p>
-// <span>$80.00</span>
-// <div className="icons">
-//   <div>
-//     <FontAwesomeIcon icon={faBars} />{" "}
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faCartArrowDown} />
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faHeart} />{" "}
-//   </div>
-// </div>
-// </div>
-// <div className="box">
-// <img src={require("../Image/feat6.jpg")} alt="" />
-// <p>BROCOLLI</p>
-// <span>$120.00</span>
-// <div className="icons">
-//   <div>
-//     <FontAwesomeIcon icon={faBars} />{" "}
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faCartArrowDown} />
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faHeart} />{" "}
-//   </div>
-// </div>
-// </div>
-// <div className="box">
-// <img src={require("../Image/feat7.jpg")} alt="" />
-// <p>CARROTS</p>
-// <span>$120.00</span>
-// <div className="icons">
-//   <div>
-//     <FontAwesomeIcon icon={faBars} />{" "}
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faCartArrowDown} />
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faHeart} />{" "}
-//   </div>
-// </div>
-// </div>
-// <div className="box">
-// <img src={require("../Image/feat8.jpg")} alt="" />
-// <p>FRUIT JUICE</p>
-// <span>$120.00</span>
-// <div className="icons">
-//   <div>
-//     <FontAwesomeIcon icon={faBars} />{" "}
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faCartArrowDown} />
-//   </div>
-//   <div>
-//     <FontAwesomeIcon icon={faHeart} />{" "}
-//   </div>
-// </div>
-// </div>

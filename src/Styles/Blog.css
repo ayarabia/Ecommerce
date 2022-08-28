@@ -1,6 +1,11 @@
 .blog{
     background-color: #F7F6F2;
 }
+@media (max-width:768px){
+    .blog .container .row{
+    padding: 3rem .5rem !important 
+    }
+}
 .blogImage{
     background-image:url('../Image/1.webp');
     /* height:350px; */

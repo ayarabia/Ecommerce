@@ -3,30 +3,41 @@
   
 }
 .subcribe .container{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fill,minmax(430px,1fr));
   
-   grid: 20px;
- 
-    padding: 80px 50px 80px;
+gap: 20px; */
+  /* padding: 80px 50px 80px; */
+  padding: 80px 13px
+
 }
-@media(max-width:767px){
+/* @media(max-width:767px){
     .subcribe {
+
         padding-left:  10px ;
     }
-}
+} */
 .subcribe .container .info p{
     color:#797777;
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 400
 }
 .subcribe .container .userInput input{
     border: none;
     background-color: #fff;
     padding: 13px 10px;
     width: 70%;
+    height: 52px;
+    
+}
+.subcribe .container .userInput input:focus{
+    outline: none !important;
 }
 .subcribe .container .userInput button{
     background-color: #82AE46;
     color: #fff;
     padding: 13px 10px;
     border: none;
+    height: 52px;
 }

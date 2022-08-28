@@ -13,15 +13,16 @@
     margin-bottom: 40px;
 }
 .productes .container .parantdiv{
-display: grid;
-grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
-gap: 20px;
-padding:  20px 50px;
+
+padding:  15px 50px;
 }
 .productes .container .parantdiv .box{
     border: 1px solid #ece9e9;
     padding-bottom: 30px;
     position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
  
 }
 .productes .container .parantdiv .box span{

@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect } from "react";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-
+import { Link } from "react-router-dom";
 function WishList(props) {
   let { productes, decrese } = props;
   let [mycart, setmycart] = useState([]);
@@ -23,16 +23,16 @@ function WishList(props) {
 
   const removeFromCart = (index) =>
     setmycart((mycart) => mycart.filter((_, i) => i !== index));
-
-  let totalprice = (e) => {
-    console.log(e.target.value);
-    console.log(total);
-    if (e.target.value >= 1) {
-      setTotal(e.target.value);
-    } else {
-      setTotal(0);
-    }
-  };
+    let totalprice = (e ,item) => {
+      item.quantity=+e.target.value
+        console.log(item);
+        if(item.quantity>1){
+        setTotal(item.quantity)
+        }else{
+          setTotal(1)
+        }
+    
+      };
   useEffect(() => {
     addToCart();
   }, []);
@@ -41,6 +41,7 @@ function WishList(props) {
     <div className="cart">
       <ComponentStart title="MY WISHLIST"></ComponentStart>
       <Container>
+      {mycart.length > 0 ? 
         <Table responsive>
           <thead>
             <tr>
@@ -68,7 +69,6 @@ function WishList(props) {
                     </div>
                   </td>
                   <td>
-                    {" "}
                     <img src={item.image} alt="" />
                   </td>
                   <td>
@@ -80,20 +80,40 @@ function WishList(props) {
                   <td>
                     <input
                       type="number"
+                      min="1"
+                      className="rounded  border border-gray-300 px-2"
                       placeholder="Enter Quentity"
                       onChange={(e) => {
-                        totalprice(e);
+                        totalprice(e,item);
                       }}
                     />
                   </td>
                   <td>
-                    <p>{total * item.price}</p>
+                  {total> 1? <p>${item.quantity * item.price }</p>:<p>${item.price }</p>}
                   </td>
                 </tr>
               );
             })}
           </tbody>
-        </Table>
+        </Table>:<div className=" emptyCart py-5 d-flex align-items-center justify-content-center  flex-column">
+          <p className="fs-2">Nothing in the wishlist</p>
+          <Link to="/">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              className="bi bi-arrow-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+              />
+            </svg>
+            <span className="ms-2 fs-5">Start Shoping</span>
+          </Link>
+        </div>}
       </Container>
     </div>
   );

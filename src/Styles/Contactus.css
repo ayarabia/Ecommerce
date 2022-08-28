@@ -51,11 +51,17 @@
  
   
 }
+@media (max-width:788px) {
+    .contact .location  {
+    
+        padding: 7px;
+    }   
+    .contact .location .container form{
+        padding: 30px !important;
+    }
+}
 
-/* .googelMap {
-width: 900px !important;
-margin: auto;
-} */
+
 @media(max-width:890px){
     .contact .location .container .row .col:first-child{
 display: none !important;

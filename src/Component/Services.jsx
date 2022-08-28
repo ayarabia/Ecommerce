@@ -1,26 +1,28 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container ,Col,Row} from "react-bootstrap";
 import "../Styles/Services.css";
 function Services() {
   return (
     <div className="services">
       <Container>
-        <div>
+    <Row>
+    <Col sm>
           <img src={require("../Image/microsoft.webp")} />
-        </div>
-        <div>
+        </Col>
+        <Col sm>
           <img src={require("../Image/android.webp")} />
-        </div>
-        <div>
+        </Col>
+        <Col sm>
           <img src={require("../Image/java.webp")} />
-        </div>
-        <div>
+        </Col>
+        <Col sm>
           <img src={require("../Image/googel.webp")} />
-        </div>
+        </Col>
 
-        <div>
+        <Col sm>
           <img src={require("../Image/adop.webp")} />
-        </div>
+        </Col>
+    </Row>
       </Container>
     </div>
   );

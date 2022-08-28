@@ -1,11 +1,12 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container ,Col ,Row} from "react-bootstrap";
 import "../Styles/Features.css";
 function Features() {
   return (
     <div className="features">
       <Container>
-        <div className="child">
+       <Row>
+       <Col sm={12} md={6} lg={3} className="child">
           <div className="borderdiv1">
             <div className="image">
               <img src={require("../Image/shipped (1).png")} />
@@ -13,8 +14,8 @@ function Features() {
           </div>
           <h4>FREE SHIPPING</h4>
           <p>ON ORDER OVER $100</p>
-        </div>
-        <div className="child">
+        </Col>
+        <Col sm={12} md={6} lg={3} className="child">
           <div className="borderdiv2">
             <div className="image">
               <img src={require("../Image/diet.png")} alt="First slide" />
@@ -22,8 +23,8 @@ function Features() {
           </div>
           <h4>ALWAYS FRESH</h4>
           <p>PRODUCT WELL PACKAGE</p>
-        </div>
-        <div className="child">
+        </Col>
+        <Col sm={12} md={6} lg={3} className="child">
           <div className="borderdiv3">
             <div className="image">
               <img src={require("../Image/badge.png")} alt="First slide" />
@@ -31,8 +32,8 @@ function Features() {
           </div>
           <h4>SUPERIOR QUALITY</h4>
           <p>QUALITY PRODUCTS</p>
-        </div>
-        <div className="child">
+        </Col>
+        <Col sm={12} md={6} lg={3} className="child">
           <div className="borderdiv4">
             <div className="image">
               <img
@@ -43,7 +44,8 @@ function Features() {
           </div>
           <h4>SUPPORT</h4>
           <p>24/7 SUPPORT</p>
-        </div>
+        </Col>
+       </Row>
       </Container>
     </div>
   );

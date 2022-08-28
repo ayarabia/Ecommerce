@@ -9,11 +9,11 @@
   }
   .footer .container .arrow{
     position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     left: 50%;
+    transform: translatex(-50%);
     width: 60px;
     height: 60px;
     top: -80px;
@@ -24,14 +24,27 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
 }
 .footer .container .arrow a{
     color: #fff;
     font-size: 18px;
-
+    animation: 1.6s ease infinite up-down;
+    -webkit-animation: 1.6s ease infinite up-down;
 }
-@keyframes arrow {
+@keyframes up-down {
+    100% {
+        margin-top: 2px;
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
     0%{
-
+        margin-top: 25px;
+        opacity: 0;
     }
 }

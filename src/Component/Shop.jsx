@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/Shop.css";
 import ComponentStart from "../Common/ComponentStart";
-import { Container, ListGroup } from "react-bootstrap";
+import { Container, ListGroup ,Col,Row} from "react-bootstrap";
 import { connect } from "react-redux";
 import { useState, useEffect } from "react";
 import getProduct from "../Redux/Action/ProductesAction";
@@ -81,12 +81,15 @@ function Shop(props) {
             </ListGroup.Item>
           </ListGroup>
         </div>
-        <div className="parantdiv">
+ </Container>
+ <Container>
+ <Row className="parantdiv">
           {ourProduct.slice(0, 10) &&
             ourProduct.slice(0, 10).map((item, index) => {
               return (
-                <div className="box" key={index} onClick={(item) => {}}>
-                  <img src={item.image} alt="" />
+                <Col sm={12} md={6} lg={3}  key={index} onClick={(item) => {}}>
+               <div className="box">
+               <img src={item.image} alt="" />
                   <p>{item.title}</p>
                   <span>${item.price}</span>
                   <div className="icons">
@@ -114,11 +117,12 @@ function Shop(props) {
                       <FontAwesomeIcon icon={faHeart} />
                     </div>
                   </div>
-                </div>
+               </div>
+                </Col>
               );
             })}
-        </div>
-      </Container>
+        </Row>
+ </Container>
 
       <Subcribe></Subcribe>
     </div>

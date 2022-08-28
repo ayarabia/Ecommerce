@@ -13,8 +13,8 @@ function About() {
         <Row>
           <Col xs={12} md={5} className="vidio">
             <a href="https://vimeo.com/45830194">
-              <FontAwesomeIcon icon="fastar" />
-              {/* <FontAwesomeIcon icon={faPlay} /> */}
+              {/* <FontAwesomeIcon icon="fastar" /> */}
+              <FontAwesomeIcon icon={faPlay} />
             </a>
           </Col>
           <Col xs={12} md={7} className="aboutdescription">

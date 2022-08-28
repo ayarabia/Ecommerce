@@ -13,6 +13,4 @@ return{
     type:'FETCH-DATA',
     payload:products
 }
-
-
 }
