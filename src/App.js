@@ -21,7 +21,7 @@ function App() {
   <ContactHeader></ContactHeader>
     <Header></Header>
     <Routes>
-    <Route path="Ecommerce/" element={<Home/>} /> 
+    <Route path="ecommerce/" element={<Home/>} /> 
         <Route path="/" element={<Home/>} />
         <Route path="about" element={<About />} />
         <Route path="blog"  element={<Blog/>} />
